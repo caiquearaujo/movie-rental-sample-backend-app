@@ -70,7 +70,7 @@ export default class CustomerEntity implements ICustomerEntity {
 		return this.fields.id;
 	}
 
-	public toJSON(): Omit<ICustomerFields, 'id' | 'role' | 'phone'> {
+	public toJSON(): Omit<ICustomerFields, 'id' | 'phone'> {
 		return {
 			first_name: this.fields.first_name,
 			last_name: this.fields.last_name,
